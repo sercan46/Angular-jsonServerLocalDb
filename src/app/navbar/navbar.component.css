@@ -1,0 +1,13 @@
+li{
+    background-color: #316ce8;
+     width: 200px;
+     margin-left: 10px;
+     margin-top: 10px;
+     border-radius: 10px;
+  
+  }
+  a{
+    color: white;
+    font-weight: bold;
+     text-align: center;
+  }

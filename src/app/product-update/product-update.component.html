@@ -1,0 +1,54 @@
+<div style="padding-top: 20px;">
+    <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+        <div style="flex: 2;">
+            <form [formGroup]="productForm">
+
+              <div class="form-group">
+                <label>Ürün No</label>
+                <input type="text" class="form-control" name="id" placeholder="Ürün No" formControlName="id"
+                      required="required" type="number" disabled>
+              </div>
+              <div class="form-group">
+                <label>Ürün Adı</label>
+                <input type="text" class="form-control" name="name" placeholder="Ürün Adı" formControlName="name"
+                  required="required">
+              </div>
+        
+              <div class="form-group">
+                <label>Ürün Açıklaması</label>
+                <input type="text" class="form-control" name="description" placeholder="Ürün Açıklaması"
+                  formControlName="description" required="required">
+              </div>
+        
+              
+              <div class="form-group">
+                <label>Ürün Fiyatı</label>
+                <input type="number" class="form-control" name="price" placeholder="Ürün Fiyatı"
+                  formControlName="price" required="required">
+              </div>
+        
+              <div>Ürün Kategorisi</div>
+              <div class="form-group">
+                <select class="form-control"aria-label=".form-select-lg example" formControlName="categoryName">
+                  <option *ngFor="let categorie of categories" [value]="categorie.name">{{categorie.name}}</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Ürün Resim Linki</label>
+                <input type="text" class="form-control" name="photo" placeholder="Ürün Resim Linki"
+                  formControlName="photo" required="required">
+              </div>
+        
+            </form>
+          <div>
+            <button type="button" class="btn btn-primary" (click)="updateProduct()">Güncelle</button>
+          </div>
+        </div>
+        <div style="flex: 1; padding-left: 20px;">
+           <img src="https://cdn.pixabay.com/photo/2016/11/19/14/16/man-1839500_1280.jpg"  height="300"/>
+        </div>
+    </div>
+
+</div>
+     

@@ -1,0 +1,9 @@
+{
+    "categories":[
+        {"id":0,"name":"Elektronik"},
+        {"id":1,"name":"Giyim"},
+        {"id":2,"name":"Kırtasiye"},
+        {"id":3,"name":"Kozmetik"}
+    ]
+}   
+    

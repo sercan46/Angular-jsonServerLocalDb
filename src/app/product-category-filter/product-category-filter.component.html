@@ -1,0 +1,11 @@
+<div  style="width: 18rem;"  style="display: flex;flex-direction: row;">
+    <div class="card" style="margin-left: 20px;" *ngFor="let product of products">
+        <img [src]="product.photo" class="card-img-top" alt="product" width="200" height="200">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <h3 class="card-title">{{product.categoryName}}</h3>
+          <p class="card-text">{{product.description}}</p>
+          <a href="#" class="btn btn-primary">{{product.price}} ₺</a>
+        </div>
+    </div>
+  </div>
